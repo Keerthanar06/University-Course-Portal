@@ -1,0 +1,14 @@
+{
+  "name": "university-course-portal-root",
+  "version": "1.0.0",
+  "description": "Cloud-Based University Course Portal Project",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install --legacy-peer-deps",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
